@@ -1,0 +1,23 @@
+---
+title: "First R Markdown"
+author: "Isabel C. Zayas Rivera"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: 
+  prettydoc::html_pretty:
+    theme: hpstr
+    highlight: github
+---
+<center>
+<img src="IMG_3043.jpg" width="500" height="300"/>
+</center>
+
+# Welcome to my Webpage!<br>
+## About me<br>
+I did my bachelor's degree in Biology at the University of Central Florida. During my time there I became an author in a research article studying _myrmecophiles_ in the nests of the Florida carpenter ant, _Pogonomyrmex badius_. Now, I am a graduate student at the University of Puerto Rico Recinto Mayaguez with a focus on entomology and aquatic ecology.
+
+
+
+```{r}
+
+```
+

@@ -1,5 +1,5 @@
 ---
-title: "First R Markdown"
+title: "Introduction to R"
 author: "Isabel C. Zayas Rivera"
 date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: 

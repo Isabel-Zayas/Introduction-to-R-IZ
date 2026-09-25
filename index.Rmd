@@ -13,11 +13,11 @@ output:
 
 # Welcome to my Webpage!<br>
 ## About me<br>
-I did my bachelor's degree in Biology at the University of Central Florida. During my time there I became an author in a research article studying _myrmecophiles_ in the nests of the Florida carpenter ant, _Pogonomyrmex badius_. Now, I am a graduate student at the University of Puerto Rico Recinto Mayaguez with a focus on entomology and aquatic ecology.
+I did my bachelor's degree in Biology at the University of Central Florida. During my time there I became an author in a research article studying _myrmecophiles_ in the nests of the Florida carpenter ant, _Pogonomyrmex badius_. Now, I am a graduate student at the University of Puerto Rico Recinto Mayaguez. My thesis interests are entomology and aquatic ecology.
 
+## R Tutorials
 
+### [Assigment 1](Assigment-1.html)<br>
+### [Assigment 2](Assigment-2.html)
 
-```{r}
-
-```
 

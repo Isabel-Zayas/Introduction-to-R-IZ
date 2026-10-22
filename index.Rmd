@@ -26,15 +26,13 @@ Artwork by: crispy.crackers on Instagram
 
 # Exams
 
-### [Midterm Exam]
+### [Midterm Exam](Midterm-Exam-1.html)
 
 # R Tutorials
 
 ### [Assigment 1](Assigment-1.html)<br>
 ### [Assigment 2](Assigment-2.html)<br>
 ### [Assigment 3](Assigment-3.html)
-
-# THIS IS A TEST
 
 
 

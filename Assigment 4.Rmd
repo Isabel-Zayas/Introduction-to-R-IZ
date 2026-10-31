@@ -1,0 +1,59 @@
+---
+title: "Assigment 4"
+author: "Isabel Zayas Rivera"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(lessR)
+library(readxl)
+library(BSDA)
+read_excel("~/Downloads/butterflies_pesticides.xlsx")
+butterflies_pesticide <-read_excel("~/Downloads/butterflies_pesticides.xlsx")
+bp <- butterflies_pesticide
+head(bp)
+getwd()
+system("git rev-parse --show-toplevel")
+file.exists(".git")
+list.files("butterflies_pesticides.xlsx", all.files = TRUE)
+bp
+```
+## Q1. Normality test 
+
+```{r}
+#Independent t-test
+shapiro.test(bp$`Wing Length`)
+```
+
+## Q.2 Equality of variances test
+
+```{r}
+head(bp)
+var.test(`Wing Length`~ Group, data=bp)
+```
+## Q.3 Statistical test
+
+```{r}
+#Welch's t-test
+t.test(`Wing Length`~ Group, data=bp,
+            alternative=c("two.sided"),
+            var.equal=FALSE,
+            )
+```
+
+## Q.ggplot 
+
+```{r}
+library(ggplot2)
+
+ggplot(bp, aes(x=Group, y=`Wing Length`))+
+  geom_boxplot()
+```
+## Q.5 
+
+```{r}
+#I wanted to research whether there were significant differences in wing length between two groups of butterflies: one group that was exposed to pesticides during the larval stage and another group that received no treatment (control). Using an independent Welch’s t-test, I ran the code and compared the wing length measurements of 80 butterflies, 40 from each of the two groups. The results showed a significant difference in wing length between the two groups (t = 3.982, df = 66.029, p-value = 0.0001721). These results suggests that pesticide exposure during larval development may have an effect on butterfly wing length, resulting in differences between treated and untreated individuals.
+```
+
